@@ -16,7 +16,8 @@ docker ps
 ### Now, you can run a simple hello-world container using “docker run.” This command will:
 1. check to see if you had the hello-world software image
 1. downloaded the image from the Docker Hub
-1. loaded the image into the container and “ran” it
+1. loaded the image into the container and "ran" it
+
 ```
 docker run hello-world
 ```
@@ -28,7 +29,7 @@ Run a simple webserver in a container on your local machine
 docker run -d -p 80:80 --name webserver nginx
 ```
 
-In a web browser, go to http://localhost/ to bring up the home page. 
+In a web browser, go to `http://localhost/` to bring up the home page. 
 
 Run docker ps while your web server is running to see details on the webserver container.
 ```

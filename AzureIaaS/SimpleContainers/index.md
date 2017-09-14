@@ -5,6 +5,7 @@
 1. To set up a Kubernetes deployment in your subscription for future customer-demo purposes. 
 1. To write and run a basic hello-world program on Docker
 
+Created at Microsoft by Lamia Youseff, [David Read](https://github.com/dave-read), Stas Kondratiev, [Tommy Falgout](https://github.com/lastcoolnameleft)
 
 ## Lab Navigation
 1. [Lab Overview](./index.html) *<-- You are here*

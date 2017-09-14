@@ -1,7 +1,7 @@
 # Simple App Containerization hands-on lab with Docker 
 ## Running CAT Sample App locally
 
-Now you are ready to run the CAT sample app on your local machine. This sample app is a ASP .NET app which you will also use on Azure with the Orchestrator in the second portion of the lab. This code material are available [here](https://github.com/dave-read/container-service-dotnet-continuous-integration-multi-container). 
+Now you are ready to run the CAT sample app on your local machine. This sample app is a ASP.NET app which you will also use on Azure with the Orchestrator in the second portion of the lab. This code material are available [here](https://github.com/dave-read/container-service-dotnet-continuous-integration-multi-container). 
 
 ### Clone the repo from github into a new local directory on your machine using: 
 ```
