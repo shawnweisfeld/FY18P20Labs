@@ -34,7 +34,7 @@ az vm availability-set create --name "web-as" --resource-group $RG --location $R
 ```
 az vm create --name "Web01" --image "Win2016Datacenter" --resource-group $RG --availability-set "web-as" --location $REGION --size Standard_DS1_v2 --vnet-name "lab-vnet" --subnet "web-subnet" --admin-username "headgeek" --admin-password "AzureRocks2020("
 
-az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web01" --resource-group $RG --settings '{"ModulesURL":"https://raw.githubusercontent.com/shawnweisfeld/IaaS-High-Availability-Lab/master/WebServerSetup.zip", "configurationFunction": "WebServer01Setup.ps1\\WebServer" }'
+az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web01" --resource-group $RG --settings '{"ModulesURL":"https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip?raw=true", "configurationFunction": "WebServer01Setup.ps1\\WebServer" }'
 
 az vm open-port --port 80 --resource-group $RG --name "Web01"
 
@@ -45,7 +45,7 @@ az vm list-ip-addresses --name Web01 --resource-group $RG --output table
 ```
 az vm create --name "Web02" --image "Win2016Datacenter" --resource-group $RG --availability-set "web-as" --location $REGION --size Standard_DS1_v2 --vnet-name "lab-vnet" --subnet "web-subnet" --admin-username "headgeek" --admin-password "AzureRocks2020("
 
-az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web02" --resource-group $RG --settings '{"ModulesURL":"https://raw.githubusercontent.com/shawnweisfeld/IaaS-High-Availability-Lab/master/WebServerSetup.zip", "configurationFunction": "WebServer02Setup.ps1\\WebServer"}'
+az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web02" --resource-group $RG --settings '{"ModulesURL":"https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip?raw=true", "configurationFunction": "WebServer02Setup.ps1\\WebServer" }'
 
 az vm open-port --port 80 --resource-group $RG --name "Web02"
 
