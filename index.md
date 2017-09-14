@@ -1,7 +1,7 @@
-# FY18 P20 Content
+# FY18 P20 Summer Camp Content
 
 ## Solutioning
-
+---
 ### Data and AI
 [Here](./DataAi/)
 
@@ -14,7 +14,7 @@
 ### Business Apps
 
 ## Experiential
-
+---
 ### Data and AI
 [Here](https://github.com/chmitch/p20camp-dataandai)
 
@@ -30,3 +30,6 @@
 ### Modern Workspace
 
 ### Business Apps
+1. [Microsoft Dynamics 365 for Customer Service](./BusinessApps/customer-service.pdf)
+1. [Microsoft Dynamics 365 for Project Service Automation](./BusinessApps/project-service-automation.pdf)
+1. [Microsoft Dynamics 365 for Sales Workshop](./BusinessApps/sales-workshop.pdf)
