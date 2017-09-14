@@ -52,4 +52,4 @@ Using the Public IP address from the prior step, open your web browser and navig
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
 
-[Back to All Labs](../index.html)
+[Back to All Labs](../../index.html)

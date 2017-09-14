@@ -37,4 +37,4 @@ As you can see `vm` is a subgroup fo the `az` command, by combining them togethe
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
 
-[Back to All Labs](../index.html)
+[Back to All Labs](../../index.html)

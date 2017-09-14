@@ -31,4 +31,4 @@ az group delete --name $RG --yes --no-wait
 1. [Extending this lab and Cleanup](./step09.html) *<-- you are here*
 1. [CLI commands Summary](./summary.html)
 
-[Back to All Labs](../index.html)
+[Back to All Labs](../../index.html)

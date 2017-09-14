@@ -113,4 +113,4 @@ az network nsg delete --name Web02NSG --resource-group $RG
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
 
-[Back to All Labs](../index.html)
+[Back to All Labs](../../index.html)
