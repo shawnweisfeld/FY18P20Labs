@@ -1,6 +1,6 @@
 # Single Region High Availability Lab
 
-![Drawing](/SingleRegion/multi-vm-diagram.png)
+![Drawing](./img/multi-vm-diagram.png)
 
 ## In this lab we will:
 1. Deploy two Windows VMs and install IIS on each
@@ -17,7 +17,7 @@ In this lab we will be using the [Azure Cloud Shell](https://docs.microsoft.com/
 
 Lets begin by logging into the [Azure Portal](https://portal.azure.com). Once you are in, select the icon to launch the Cloud Shell in the upper right.
 
-![Icon](/SingleRegion/shell-icon.png)
+![Icon](./img/shell-icon.png)
 
 You will now see a console at the bottom of your browser window. Here you will enter the commands below to complete the lab. 
 
@@ -47,7 +47,7 @@ az account list --output table
 
 Your output should look something like this:
 
-![Screen](/SingleRegion/accounts.png)
+![Screen](./img/accounts.png)
 
 Take note of the `--output table` switch. This takes the output from the `list` command and formats it in an easy to read table. 
 
@@ -86,7 +86,7 @@ az group create --location $REGION --name $RG
 
 After you run this command you will see a response from Azure in json providing details about the resource group you just created. However one of the nice things about the CLI being in the portal is that it is easy to view resources as you create/modify/delete them, all in the same window. For example lets click on "Resource Groups" in the Portal Navigation bar. This should pull up the list of all your Resource Groups, here you can select the one that we just created. 
 
-![Resource Groups](/SingleRegion/resource-groups.png)
+![Resource Groups](./img/resource-groups.png)
 
 > NOTE: Remember, everything we are creating via the CLI can also be created using the Portal, PowerShell commands or an ARM template. Many users will start with the Portal when they are learning, and then migrate to the CLI, PowerShell or an ARM template as their skills and processes mature. 
 
@@ -101,11 +101,11 @@ az vm availability-set create --name "web-as" --resource-group $RG --location $R
 
 After you run the command, press the refesh button and look at what you did.
 
-![Portal Refresh](/SingleRegion/portal-refresh.png)
+![Portal Refresh](./img/portal-refresh.png)
 
 Also try and click on the name of the availability set, and take a look at the overview tab. Here you will see that the Availability set we created has 2 Fault Domains and 5 Update Domains. Each VM we deploy will be deployed into a Fault Domain and Update Domain. Fault domains ensure the physical isolation we were talking about earlier. Update domains are used for planned maintenance. 
 
-![Fault and Update Domains](/SingleRegion/fault-update-domains.png)
+![Fault and Update Domains](./img/fault-update-domains.png)
 
 > For the rest of the lab today I encourage you to pull up the resources we are going to create via the CLI in the portal and take a look at the options you have available to you. I am not going to include screen shots of each interesting setting. 
 
