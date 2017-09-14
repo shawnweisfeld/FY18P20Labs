@@ -1,0 +1,12 @@
+# Data and AI Solutioning
+
+## Scenario 1.
+**Stark Enterprises** is an MSP Partner with Microsoft.  They are a data platform consulting group offering managed services that help their customer base pull insights out of their data, both hosted and on prem.  Their current product set includes data experts that manually evaluate customer data, and, develop business intelligence applications.  They also provide support for Microsoft cloud solutions offered through their CSP contract.  Their CTO has reached out to the Microsoft account team looking for help in streamlining this process by utilizing Azure services.  She mentioned that their typical customer base comes to them with an average of 5-25 GB of data, and, vary in how they currently license their solutions (EA, SPLA, etc…)  Regulatory compliance in PCI is key for them, as they tend to get a lot of customers from the retail space.  
+ 
+## Scenario 2.
+**Lannister LLC.** Is a ISP Partner with Microsoft that offers services to the Oil and Gas industry.  Their main product is a system of telemetry gathering sensors that monitor flow through various control points along an oil pipeline.  The system allows its customers to monitor throughput, temperature, pressure, and volume.  The Lannister LLC CTO has reached out to the Microsoft account team with concerns about their on-prem solution being able to scale to meet the demands of a new contract with Baratheon Oil, the world’s largest oil refinery.  **Baratheon Oil** has pipelines in every major country generating TBs of data on a monthly basis.  Baratheon’s president has major concerns about the usability of so much data, and, Lannister LLC’s ability to provide disaster recovery and high availability supporting that infrastructure.  
+
+## Scenario 3.
+**Targaryen Telemetry** is a recent acquisition by **Lannister LLC** (See scenario 2) that collects and monitors environmental data around the globe.  Lannister LLC is looking to utilize this new information stream with its core product centered on oil and gas pipeline monitoring.  The Lannister LLC CTO has reached out to the Microsoft team for help in how it may best utilize this data with its current repository of oil and gas pipeline data.  Ultimately, Lannister LLC would like to offer their customers a new product that provides intelligence and predictability regarding their oil flow.
+
+[Back to Index](../index.html)
