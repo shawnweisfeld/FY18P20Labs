@@ -20,7 +20,7 @@ Configuration WebServer
       SetScript = 
       {
         $webclient = New-Object System.Net.WebClient
-        $webclient.DownloadFile("https://raw.githubusercontent.com/shawnweisfeld/IaaS-High-Availability-Lab/master/Web01/iisstart.htm","C:\inetpub\wwwroot\iisstart.htm")
+        $webclient.DownloadFile("https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/SingleRegionHALab/assets/Web01/iisstart.htm","C:\inetpub\wwwroot\iisstart.htm")
       }
 
       TestScript = { $false }
