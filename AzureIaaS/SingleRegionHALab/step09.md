@@ -16,7 +16,7 @@ To clean up, just delete the entire Resource Group
 az group delete --name $RG --yes --no-wait
 ```
 
-Note the use of the `--no-wait` argument, this will start the deletion and let it run in the background so we don't have to wait for it to complete. 
+> Note the use of the `--no-wait` argument, this will start the deletion and let it run in the background so we don't have to wait for it to complete. 
 
 ## Lab Navigation
 1. [Overview](./) 
