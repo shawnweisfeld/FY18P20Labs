@@ -16,4 +16,4 @@ Created at Microsoft by Lamia Youseff, [David Read](https://github.com/dave-read
 1. [Defining and running multi-container Docker applications using Docker compose](./step05.html)
 1. [Running CAT Sample App locally](./step06.html)
 
-[Back to All Labs](../../index.html)
+[Back to Index](../../index.html)

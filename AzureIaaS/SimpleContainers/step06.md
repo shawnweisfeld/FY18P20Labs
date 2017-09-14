@@ -40,4 +40,4 @@ The frontend service (service-a) will be available at `http://localhost:8080`.
 1. [Defining and running multi-container Docker applications using Docker compose](./step05.html)
 1. [Running CAT Sample App locally](./step06.html) *<-- You are here*
 
-[Back to All Labs](../../index.html)
+[Back to Index](../../index.html)

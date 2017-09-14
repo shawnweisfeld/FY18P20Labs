@@ -38,4 +38,4 @@ After you run this command you will see a response from Azure in json providing 
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
 
-[Back to All Labs](../../index.html)
+[Back to Index](../../index.html)
