@@ -9,7 +9,7 @@ Discovery meetings via Skype have taken place with CloudTech and Contoso and you
 
 ## Website
  - Contoso wants to establish an ecommerce website for an upcoming product launch.  You’ve learned this website requires a legacy MSI application and Contoso needs to maintain direct control of the web server.  
- - Contoso is concerned about downtime given the potential revenue this new web application will generate.  The CTO has stated that the web application must continue to service consumers yet not be too expensive to operate.  For context, he referenced the AWS outage from earlier this year as a specific situation he wants to avoid.
+ - Contoso is concerned about downtime given the potential revenue this new web application will generate.  The CTO has stated that the web application must continue to service consumers yet not be too expensive to operate.  For context, he referenced the [AWS outage](https://aws.amazon.com/message/41926/) from earlier this year as a specific situation he wants to avoid.
 
 ## Virtual Servers
  - Contoso has several virtual servers that house applications essential to running the business.
