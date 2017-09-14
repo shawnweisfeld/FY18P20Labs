@@ -126,3 +126,5 @@ az group delete --name $RG --yes --no-wait
 1. [Look Mom its magic](./step08.html)
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html) *<-- you are here*
+
+[Back to All Labs](../index.html)

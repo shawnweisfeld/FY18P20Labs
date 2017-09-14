@@ -31,3 +31,5 @@ Also try and click on the name of the availability set, and take a look at the o
 1. [Look Mom its magic](./step08.html)
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
+
+[Back to All Labs](../index.html)

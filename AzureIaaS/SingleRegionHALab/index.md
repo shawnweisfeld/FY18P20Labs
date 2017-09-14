@@ -23,3 +23,5 @@ This lab is based on the following article: [Run load-balanced VMs for scalabili
 1. [Look Mom its magic](./step08.html)
 1. [Extending this lab and Cleanup](./step09.html)
 1. [CLI commands Summary](./summary.html)
+
+[Back to All Labs](../index.html)
