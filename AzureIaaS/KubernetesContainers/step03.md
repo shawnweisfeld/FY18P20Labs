@@ -96,7 +96,7 @@ then add a label to your specific node
 kubectl label nodes kubernetes-foo-node-1.c.a disktype=ssd
 ```
 
-#### 2.	You can then specify the label in your pod config file as a nodeSelector section
+#### You can then specify the label in your pod config file as a nodeSelector section
 ```
 cat pod2_sample.yaml
 apiVersion: v1
@@ -129,7 +129,7 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
 
 This actually means that you may never need to manipulate ReplicaSet objects: use a Deployment instead, and define your application in the spec section.
 
-https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+[https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
 A Deployment controller provides declarative updates for Pods and ReplicaSets.
 
@@ -283,7 +283,7 @@ nginx-deployment-4234284026   0         0         0         4m
 
 This is one example where the immutability of containers is a huge asset, in rolling new updates and in devops. 
 
-For more exercises and info on Kubernetes, the Kubernetes website has a wealth of information and easy to follow on its various features (http://kubernetes.io/docs/).  
+For more exercises and info on Kubernetes, the Kubernetes website has a wealth of information and easy to follow on its various features ([http://kubernetes.io/docs/](http://kubernetes.io/docs/)).  
 
 ## Lab Navigation
 1. [Lab Overview](./index.html)
