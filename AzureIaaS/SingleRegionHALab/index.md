@@ -12,6 +12,10 @@
 This lab is based on the following article: [Run load-balanced VMs for scalability and availability](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/virtual-machines-windows/multi-vm). NOTE: at the time of writing this lab the ARM template at the bottom of the article is broken.
 
 ## The Lab
+1. [Overview](./)
+1. [Connect to the Azure Cloud Shell](./Step01.html)
+
+## The Lab
 ### 1) Connect to the Azure Cloud Shell
 In this lab we will be using the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview). This provides us the ability to use the Azure CLI 2.0 from within our browser without needing to install anything locally (PowerShell support coming soon). You can also use the Azure CLI 2.0 from the console on your computer ([More Info](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)). Additionally everything we are doing can also be done via the Portal, PowerShell or an ARM Template, however we will be focusing on the Azure CLI 2.0 commands in this lab.  
 
