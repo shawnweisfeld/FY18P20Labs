@@ -20,8 +20,9 @@ This command created a bunch of resources for us (in the same order you should s
 Now that we have a VM we need to install IIS and deploy our website. Here we can use the Azure Desired State Configuration VM Extension to install IIS inside the VM and download a Simple Website into the VM.  (This step will takes a few minutes to complete)
 
 ```
-az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web01" --resource-group $RG --settings '{"ModulesURL":"https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip", "configurationFunction": "WebServer01Setup.ps1\\WebServer" }'
+az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web01" --resource-group $RG --settings '{"ModulesURL":"https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip?raw=true", "configurationFunction": "WebServer01Setup.ps1\\WebServer" }'
 ```
+
 
 Next, lets open up port 80 to allow web traffic
 
