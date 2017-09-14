@@ -11,7 +11,8 @@
 ### Azure Apps
 
 ### Azure Infrastructure
-
+ - [Here](./AzureIaaS/solutioning.html)
+ - 
 ### Modern Workspace
 
 ### Business Apps
