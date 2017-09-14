@@ -40,6 +40,7 @@ The above command will use ACS to create a new Kubernetes cluster named "my-k8-c
 ### Install Kubectl command line. 
 If not already installed, you can use the cli to install the k8 command line utility (kubectl).
 > Note: On Windows you need to have opened the command windows with Administrator rights as the installation tries write the program to "C:\Program Files\kubectl.exe". You may also have to add “C:\Program Files” to your PATH
+
 ```
 az acs kubernetes install-cli
 ```
