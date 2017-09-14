@@ -10,7 +10,7 @@ az vm create --name "Web02" --image "Win2016Datacenter" --resource-group $RG --a
 Now, like we did before, use the Azure Desired State Configuration Extension to install IIS and deploy our Simple Website  (This step will takes a few minutes to complete)
 
 ```
-az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web01" --resource-group $RG --settings '{"ModulesURL":"https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip?raw=true", "configurationFunction": "WebServer02Setup.ps1\\WebServer" }'
+az vm extension set --name DSC --publisher Microsoft.Powershell --version 2.19 --vm-name "Web02" --resource-group $RG --settings '{"ModulesURL":"https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/SingleRegionHALab/assets/WebServerSetup.zip?raw=true", "configurationFunction": "WebServer02Setup.ps1\\WebServer" }'
 ```
 
 And lets open up port 80 to allow web traffic directly to the host
