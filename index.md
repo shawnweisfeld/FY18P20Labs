@@ -32,7 +32,7 @@
  - [Simple App Containerization hands-on lab with Docker](./AzureIaaS/SimpleContainers/)
  - [Containers Orchestrator hands-on lab with Kubernetes](./AzureIaaS/KubernetesContainers/)
  - Configuration Management and Disaster Recovery with Azure *(coming soon)*
- - Open Source Workloads in Azure with Linux *(coming soon)*
+ - [Open Source Workloads in Azure with Linux](./AzureIaas/osslinux.html)
  
 ### Modern Workspace
 
