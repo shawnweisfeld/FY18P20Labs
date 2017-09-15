@@ -16,6 +16,7 @@
 ### Modern Workspace
 
 ### Business Apps
+ - [Here](./BusinessApps/solutioning-scenario.pdf)
 
 <br>
 <br>
