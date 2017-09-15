@@ -2,6 +2,8 @@
 
 ![Drawing](./img/multi-vm-diagram.png)
 
+Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
+
 ## In this lab we will:
 1. Deploy two Windows VMs and install IIS on each
 1. The VMs will be placed in an [Availability Set](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability) to be in scope for the [99.95% VM SLA](https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines)
