@@ -21,7 +21,10 @@
     1. A DNS Custom Name (two random characters)
     1. Your SSH key, we created this earlier. Remember it should start with `ssh-rsa` and end with your email address
     1. The name of the VM, use `myosslabvm`
+
 1. After a few minutes you should see some JSON in the shell, these are the details about the VM you just provisioned.
+    
+    > While you are waiting take read through the ARM template to get an idea of what you are building. You can see the template [here](https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/AzureOSS/assets/azuredeploy.json).
 
 
 ## Lab Navigation

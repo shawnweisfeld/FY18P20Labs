@@ -2,7 +2,8 @@
 ## Setup your environment
 
 1. Install the The Windows Subsystem for Linux
-The Windows Subsystem for Linux is a collection of components that enables native Linux ELF64 binaries to run on Windows. More info [here](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/).
+
+    The Windows Subsystem for Linux is a collection of components that enables native Linux ELF64 binaries to run on Windows. More info [here](https://blogs.msdn.microsoft.com/wsl/2016/04/22/windows-subsystem-for-linux-overview/).
 
     If you are using Windows and have not done so already, follow the instructions [here](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) to install the Windows Subsystem for Linux. 
 
@@ -32,7 +33,9 @@ The Windows Subsystem for Linux is a collection of components that enables nativ
     
     ```Shell
     cat ~/.ssh/id_rsa.pub
-    [This is an example of how and your pub key should look like:]
+    ```
+    Your key will look something like this. 
+    ```
     ssh-rsa 123456789/dTc6wJT+YCOUiLLS6F7Ge4WlCgmH7fW7UIUJpFcXwDv1bWVMQ3chBFFELWEhEjCqX7HAVoSjEF8oAwM0Ik5p6y66J420eeOGBLHkyV    +nBiV0F5WVRKFS5Az1rZy8x/1usbMms/skMnS5Int9QcGIIA9g7Ws9xg28/2XA5IUPUZ0kIKbuSv7bAIqrHaH7WXzUeLeOjUIeW34d9WO52kNqiITjyW1D7kThXKtgS9Y5TEie5MuP8plzz+mBID59EFmdEhBK7QquuT6axXXXXXXXXXXXXXZ1rvoysOHxhDvzVWRuc623pV8PPjiBHiu1Y1T foo@bar.com
     ```
     > When you copy the key to your keyboard for use later in the vm creation process, the key should include "ssh-rsa" and the email address provided
