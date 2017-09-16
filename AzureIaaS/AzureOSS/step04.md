@@ -31,17 +31,19 @@ There are many out in the wild but these are some of the most popular ones. The 
 
 1. First lets add the MongoDB repository to yum. To do that we need to add a file containing the MongoDB info to the `'/etc/yum.repos.d/'` folder. 
 
-1. First lets create the file. Copy/paste the following in and then press `ctrl+d` to end the editing session.
+1. First lets create the file. Copy/paste the following in and then press `ctrl+d` to end the editing session. (be sure to copy the blank line at the end of the file)
 
-    ```
-    cat >mongodb.org-3.2.repo
-    [mongodb-org-3.2]
-    name=MongoDB Repository
-    baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
-    gpgcheck=0
-    enabled=1
-    gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
-    ```
+```
+cat >mongodb.org-3.2.repo
+[mongodb-org-3.2]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
+gpgcheck=0
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
+
+```
+    
 1. Now using the following command you can see the file you just created. 
     ```
     cat mongodb.org-3.2.repo

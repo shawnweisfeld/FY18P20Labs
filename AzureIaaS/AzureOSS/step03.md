@@ -27,7 +27,7 @@
     ```
     [shawn@myosslabvm ~]$
     ```
-    Your shell is not tunneled into the remote machine in Azure. So it is just like you are sitting in the Azure datacenter looking at the shell running on the VM. 
+    Your shell is now tunneled into the remote machine in Azure. So it is just like you are sitting in the Azure datacenter looking at the shell running on the VM. 
 
 
 ## Lab Navigation
