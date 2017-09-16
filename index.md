@@ -15,6 +15,8 @@
  - [Here](./AzureIaaS/solutioning.html)
 
 ### Modern Workspace
+ - [Here](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx)
+
 
 ### Business Apps
  - [Here](./BusinessApps/solutioning-scenario.pdf)
