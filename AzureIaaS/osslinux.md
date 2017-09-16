@@ -3,6 +3,7 @@
 ## Linux Labs
 This 8 part lab was created as part of the FY17 DX Next training program. Completing all the parts will take a while, but the first few are a good getting started point.
  - [Here](https://github.com/DxNext/2016-Oct-L2/tree/master/Linux)
+> NOTE: this lab uses the Azure CLI v1, not the newer CLI v2
 
 ## Linux Demo Environment
 Do you need to demo Linux workloads to partners? Take a look at this setup script to quickly build an environment you can do demos from.
