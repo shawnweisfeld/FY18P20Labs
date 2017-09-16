@@ -19,7 +19,7 @@ There are many out in the wild but these are some of the most popular ones. The 
 
 1. First of all lets get the latest definitions for yum:
 
-    ```Shell
+    ```
     sudo yum update
     ```
 
@@ -31,7 +31,7 @@ There are many out in the wild but these are some of the most popular ones. The 
 
 1. First lets add the MongoDB repository to yum. To do that we need to add a file containing the MongoDB info to the `'/etc/yum.repos.d/'` folder. 
 
-1. First lets create the file. Copy/paste the following in and then press `ctrl+d` to end the editing session. (be sure to copy the blank line at the end of the file)
+1. First lets create the file. Copy/paste the following in and then press `ctrl+d` to end the editing session.
 
 ```
 cat >mongodb.org-3.2.repo
@@ -50,16 +50,16 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
     ```
 1. Now lets move the file into the proper folder, using the `'mv'` command.
 
-    ```Shell
+    ```
     sudo mv mongodb.org-3.2.repo /etc/yum.repos.d
     ```
 
 1. We need to make sure it has the right permissions and ownership, `'ls -la'` allows us to see who owns the file and what permissions it has assigned.
-    ```Shell
+    ```
     ls -la /etc/yum.repos.d
     ```
 
-    ```Shell
+    ```
     total 52
     drwxr-xr-x.  2 root  root  4096 Sep 16 16:53 .
     drwxr-xr-x. 87 root  root  8192 Sep 16 16:38 ..
@@ -76,7 +76,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
     The first thing we noticed is tha the file is owned by `'user'`  from the group `'user'` (the user and group that created the file) while the rest of the files belong to `'root'`. To transfer the file to root we need to run the following command:
 
-    ```Shell
+    ```
     sudo chown root:root /etc/yum.repos.d/mongodb.org-3.2.repo
     ```
 
@@ -102,13 +102,13 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
     We can notice that the file has the following permissions:
 
-    ```Shell
+    ```
     -rw-rw-r--.
     ```
     
     We can fix the permissions with the following command.
 
-    ```Shell
+    ```
     sudo chmod 644 /etc/yum.repos.d/mongodb.org-3.2.repo
     ```
 
@@ -134,21 +134,21 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 1. Install MongoDB
     Start the installation with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
-    ```Shell
+    ```
     sudo yum install mongodb-org
     ```
 
 1. Start the service:
-    ```Shell
+    ```
     sudo systemctl start mongod
     ```
 
     And make sure it's running
-    ```Shell
+    ```
     sudo systemctl status mongod
     ```
 
-    ```Shell
+    ```
     ● mongod.service - SYSV: Mongo is a scalable, document-oriented database.
     Loaded: loaded (/etc/rc.d/init.d/mongod)
     Active: active (running) since Thu 2016-10-13 01:39:07 UTC; 5s ago
@@ -169,20 +169,20 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 1. First install the epel-release with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
 
-    ```Shell
+    ```
     sudo yum install epel-release
     ```
 
 1. Next, Install [NodeJS](https://nodejs.org), with the following command, and press `y` to Confirm the installation TWICE, when it is done is should say `Complete!`
 
-    ```Shell
+    ```
     sudo yum install nodejs
     ```
 
 1. Now Check the installed version of NodeJS and [NPM](https://www.npmjs.com/)
 
     to check the version of `node` execute the following
-    ```Shell
+    ```
     node --version
     ```
 
@@ -192,7 +192,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
     ```
 
     to check teh version of `npm` execute the following
-    ```Shell
+    ```
     npm version
     ```
     you should see this:
@@ -213,30 +213,30 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 1. We are going to use the [Bower Package Manager](http://bower.io/) to manage our front-end packages. Execute the following to install it.
 
-    ```Shell
+    ```
     sudo npm install -g bower
     ```
 1. We will be using `'git'` to clone directories. Execute the following to install it. Don't forget to confirm the install.
 
-    ```Shell
+    ```
     sudo yum install git
     ```
 
 1. We clone the latest version of [MEAN.JS](https://github.com/meanjs/mean) boilerplate
 
-    ```Shell
+    ```
     git clone https://github.com/meanjs/mean.git meanjs
     ```
 
 1. And we move to the meanjs folder we just created
 
-    ```Shell
+    ```
     cd meanjs
     ```
 
 1. We install all the depondencies for the boilerplate
 
-    ```Shell
+    ```
     npm install
     ```
 
@@ -246,13 +246,13 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 1. We can run the app now:
 
-    ```Shell
+    ```
     npm start
     ```
 
     We should see something like this
 
-    ```Shell
+    ```
     + Important warning: config.domain is empty. It should be set to the fully qualified domain of the app.
     --
     MEAN.JS - Development Environment
@@ -282,4 +282,4 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 1. [Install components to make our VM a Web Server](./step04.html) *<-- you are here*
 1. [Cleanup](./step05.html)
 
-[Back to Index](../index.html)        
+[Back to Index](../../index.html)        

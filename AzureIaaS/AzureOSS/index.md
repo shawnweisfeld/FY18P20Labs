@@ -12,7 +12,7 @@ Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
 1. [Install components to make our VM a Web Server](./step04.html)
 1. [Cleanup](./step05.html)
 
-[Back to Index](../index.html)
+[Back to Index](../../index.html)
 
 ### Lab Source
 This lab is an update of the one from the FY17 DX Next training program written for Azure CLI v1. 
