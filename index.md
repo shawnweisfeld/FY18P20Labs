@@ -37,6 +37,7 @@
  - [Containers Orchestrator hands-on lab with Kubernetes](./AzureIaaS/KubernetesContainers/)
  
 ### Modern Workspace
+ - [Modern Workplace Security](./ModernWorkplace/security/readme.md)
 
 ### Business Apps
  - [Microsoft Dynamics 365 for Customer Service](./BusinessApps/customer-service.pdf)
