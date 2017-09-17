@@ -14,7 +14,6 @@ Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
 
 [Back to Index](../../index.html)
 
-### Lab Source
 This lab is an update of the one from the FY17 DX Next training program written for Azure CLI v1. 
  - [Here](https://github.com/DxNext/2016-Oct-L2/tree/master/Linux)
 
