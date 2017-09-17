@@ -1,6 +1,6 @@
 # Open Source Workloads in Azure with Linux
 
-In this lab you will create a Linux VM using the Azure CLI v2.0 and an ARM Template. You will then configure the VM to be a web server running the MEAN stack.
+In this lab you will create a Linux VM using the Azure CLI v2.0 and an ARM Template. You will then configure the VM to be a web server running the MEAN stack. This lab takes about 30 minutes to complete. 
 
 ## Lab Navigation
 1. [Overview](./) *<-- you are here*
