@@ -15,7 +15,7 @@ The minimal parameters to create a ACR are a name, resource group and location. 
 > Note: the command will return the resource id for the registry. That id will need to be used in subsequent steps if you want to create service principals that are scoped to this registry instance.
 
 ```
-az acr create --name $ACR_NAME --resource-group $RESOURCE_GROUP --location eastus –sku Managed_Standard
+az acr create --name $ACR_NAME --resource-group $RESOURCE_GROUP --location eastus --sku Managed_Standard
 ```
 
 Create a two service principals, one with read only and one with read/write access.

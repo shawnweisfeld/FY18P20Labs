@@ -247,7 +247,7 @@ spec:
 
 #### To update to container image to ngnix 1.9.1, you can use kubectl rolling-update --image to specify the new image:
 ```
-kubectl apply –f deployment-nginx-update.yaml
+kubectl apply -f deployment-nginx-update.yaml
 ```
 
 The output should look like this
