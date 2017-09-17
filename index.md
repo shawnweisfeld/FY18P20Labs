@@ -9,6 +9,7 @@
  - [Here](./DataAi/)
 
 ### Azure Apps
+ - [Here](https://1drv.ms/w/s!ApNjXNBDMrWt2zNEDRjyKEpH1Lgm)
 
 ### Azure Infrastructure
  - [Here](./AzureIaaS/solutioning.html)
@@ -27,6 +28,7 @@
  - [Here](https://github.com/chmitch/p20camp-dataandai)
 
 ### Azure Apps
+ - [Here](https://1drv.ms/b/s!ApNjXNBDMrWt2zQbDuj6I_6WHZnR)
 
 ### Azure Infrastructure
  - [Run load-balanced VMs for scalability and availability](./AzureIaaS/SingleRegionHALab/)
