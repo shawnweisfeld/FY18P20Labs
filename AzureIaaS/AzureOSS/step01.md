@@ -13,7 +13,7 @@ If you have not done so already. Follow the 'Install with apt-get for Bash on Ub
 
 ### Create a pair of SSH keys using Bash.
 
-Use *'ssh-keygen'* to create an RSA SSH key of 4096 bits pointing to our e-mail address.
+Use `ssh-keygen` to create an RSA SSH key of 4096 bits pointing to our e-mail address.
 
 ```
 ssh-keygen -t rsa -b 4096 -C "your email address"
@@ -32,7 +32,9 @@ Enter passphrase (empty for no passphrase): [Type a passphrase]
 Enter same passphrase again: [Type passphrase again]
 ```
 
-Now, after your key was created just *cat* the content of your public key (if you used a different location, make sure you use the correct file). This is the key you will be pasting in your azure cli to create the VM.
+Now, after your key was created just `cat` the content of your public key (if you used a different location, make sure you use the correct file). This is the key you will be pasting in your azure cli to create the VM. 
+
+The `cat` command is used to work with files. In this case we are printing the contents of a file to the console. Later we will be using the `cat` command to create a new file.
 
 ```
 cat ~/.ssh/id_rsa.pub
