@@ -44,7 +44,7 @@ Your key will look something like this.
 ssh-rsa 123456789/dTc6wJT+YCOUiLLS6F7Ge4WlCgmH7fW7UIUJpFcXwDv1bWVMQ3chBFFELWEhEjCqX7HAVoSjEF8oAwM0Ik5p6y66J420eeOGBLHkyV    +nBiV0F5WVRKFS5Az1rZy8x/1usbMms/skMnS5Int9QcGIIA9g7Ws9xg28/2XA5IUPUZ0kIKbuSv7bAIqrHaH7WXzUeLeOjUIeW34d9WO52kNqiITjyW1D7kThXKtgS9Y5TEie5MuP8plzz+mBID59EFmdEhBK7QquuT6axXXXXXXXXXXXXXZ1rvoysOHxhDvzVWRuc623pV8PPjiBHiu1Y1T foo@bar.com
 ```
 
-> When you copy the key to your keyboard for use later in the vm creation process, the key should include "ssh-rsa" and the email address provided
+> When you copy the key to your clipboard for use later in the vm creation process, the key should include "ssh-rsa" and the email address provided
 
 ### Log in to your Azure Subscription
 
