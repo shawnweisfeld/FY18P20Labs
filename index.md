@@ -30,7 +30,7 @@
 
 ### Azure Infrastructure
  - [Run load-balanced VMs for scalability and availability](./AzureIaaS/SingleRegionHALab/)
- - [Open Source Workloads in Azure with Linux](./AzureIaaS/osslinux.html)
+ - [Open Source Workloads in Azure with Linux](./AzureIaaS/AzureOSS/)
  - [Simple App Containerization hands-on lab with Docker](./AzureIaaS/SimpleContainers/)
  - [Containers Orchestrator hands-on lab with Kubernetes](./AzureIaaS/KubernetesContainers/)
  
