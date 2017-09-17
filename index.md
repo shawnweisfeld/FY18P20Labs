@@ -14,7 +14,8 @@
  - [Here](./AzureIaaS/solutioning.html)
 
 ### Modern Workspace
- - [Here](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx)
+ - [ISV Scenario](WorkingLife-Balance.pptx)
+ - [Security](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx)
 
 
 ### Business Apps
