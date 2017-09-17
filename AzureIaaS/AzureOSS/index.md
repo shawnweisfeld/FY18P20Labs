@@ -2,8 +2,6 @@
 
 In this lab you will create a Linux VM using the Azure CLI v2.0 and an ARM Template. You will then configure the VM to be a web server running the MEAN stack.
 
-Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
-
 ## Lab Navigation
 1. [Overview](./) *<-- you are here*
 1. [Setup your environment](./step01.html)
@@ -14,8 +12,7 @@ Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
 
 [Back to Index](../../index.html)
 
-This lab is an update of the one from the FY17 DX Next training program written for Azure CLI v1. 
- - [Here](https://github.com/DxNext/2016-Oct-L2/tree/master/Linux)
+Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld). This lab is an update of the FY17 DX Next [Linux Lab](https://github.com/DxNext/2016-Oct-L2/tree/master/Linux) written for Azure CLI v1. 
 
 ## Linux Demo Environment
 Do you need to demo Linux workloads to partners? Take a look at this setup script to quickly build an environment you can do demos from.
