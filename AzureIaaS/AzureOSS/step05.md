@@ -4,9 +4,10 @@
 1. Stop the running node process by pressing `ctrl+c` and then `enter` in your shell. 
 1. Log out of the VM, by typing `exit` at the prompt in the shell. You should now see the prompt switch back from the remote machine to your local machine. 
 1. Now lets delete the resource group we created and everything in it.
-    ```
-    az group delete --name $RG --yes
-    ```
+
+```
+az group delete --name $RG --yes
+```
 
 ## Lab Navigation
 1. [Overview](./)
