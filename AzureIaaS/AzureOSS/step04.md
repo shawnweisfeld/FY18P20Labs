@@ -27,9 +27,9 @@ And press `y` to confirm the update
 
 This will take a few minutes to finish, when it is done the last line should say `Complete!` and we should be back at the command prompt. 
 
-## Install MongoDB
+### Install MongoDB
 
-### Tell yum about MongoDB
+#### Tell yum about MongoDB
 First lets add the MongoDB repository to yum. To do that we need to create a file containing the MongoDB info to the `'/etc/yum.repos.d/'` folder. 
 
 Start by coping and pasting the following into your shell and then press `ctrl+d` to end the editing session.
@@ -140,7 +140,7 @@ drwxr-xr-x. 87 root root 8192 Sep 16 16:38 ..
 -rw-r--r--.  1 root root  282 May 17 19:05 OpenLogic.repo    
 ```
 
-### Install MongoDB with yum
+#### Install MongoDB with yum
 
 Start the installation with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
 
@@ -148,7 +148,7 @@ Start the installation with the following command, and press `y` to Confirm the 
 sudo yum install mongodb-org
 ```
 
-### Start the MongoDB service:
+#### Start the MongoDB service:
 
 ```
 sudo systemctl start mongod
@@ -178,7 +178,7 @@ Oct 13 01:39:07 chentos mongod[48902]: Starting mongod: [  OK  ]
 Oct 13 01:39:07 chentos systemd[1]: Started SYSV: Mongo is a scalable, document-oriented database..
 ```
 
-## Install Node.js
+### Install Node.js
 
 First install the epel-release with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
 
@@ -227,23 +227,23 @@ you should see this:
     zlib: '1.2.7' }
 ```
 
-## The rest of the packages
+### Install the rest of the packages
 
-### Install Bower
+#### Install Bower
 We are going to use the [Bower Package Manager](http://bower.io/) to manage our front-end packages. Execute the following to install it.
 
 ```
 sudo npm install -g bower
 ```
 
-### Install Git
+#### Install Git
 We will be using `'git'` to clone directories. Execute the following to install it. Don't forget to confirm the install.
 
 ```
 sudo yum install git
 ```
 
-### Install MEAN.JS
+#### Install MEAN.JS
 
 We clone the latest version of [MEAN.JS](https://github.com/meanjs/mean) boilerplate
 
@@ -267,7 +267,7 @@ npm install
 
 > To update these packages later on, just run npm update
 
-## Start the node server
+### Start the node server
 We can run the app now:
 
 ```
@@ -289,7 +289,7 @@ MEAN.JS version: 0.5.0
 --
 ```
 
-## View your app
+### View your app
 On your PC, open your browser and navigate to your web servers URL, port 3000. The URL is the FQDN we used earlier, plus the port number. 
 
 Mine looks like this
