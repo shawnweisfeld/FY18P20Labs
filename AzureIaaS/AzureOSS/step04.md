@@ -7,7 +7,7 @@ Now that we are inside our machine we need to install these tools:
 1. Node.js
 1. The rest of the packages
 
-## Package managers (.deb and .rpm)
+### Package managers (.deb and .rpm)
 
 There are many out in the wild but these are some of the most popular ones. The first one is the high-level package manager that provides a simple way to retrieve and install packages including dependency resolution and multiple sources. Then we have the low-level package manager that can only install, remove, provide info and build packages. The con is that it does not automatically download and install the package dependencies.
 
@@ -15,9 +15,9 @@ There are many out in the wild but these are some of the most popular ones. The 
 1. **Advanced Packaging Tool (APT-GET) * -> DPKG** - Ubuntu, Debian, KNOPPIX, etc.(Debian based distros)
 1. **ZYPPER -> RPM** - Open SUSE, SUSE Linux Enterprise Server
 
-### $ sudo yum install
+### Install `yum`
 
-#### First of all lets get the latest definitions for yum:
+First of all lets get the latest definitions for yum:
 
 ```
 sudo yum update
@@ -27,11 +27,12 @@ And press `y` to confirm the update
 
 This will take a few minutes to finish, when it is done the last line should say `Complete!` and we should be back at the command prompt. 
 
-## MongoDB
+## Install MongoDB
 
-#### First lets add the MongoDB repository to yum. To do that we need to add a file containing the MongoDB info to the `'/etc/yum.repos.d/'` folder. 
+### Tell yum about MongoDB
+First lets add the MongoDB repository to yum. To do that we need to create a file containing the MongoDB info to the `'/etc/yum.repos.d/'` folder. 
 
-#### First lets create the file. Copy/paste the following into your shell and then press `ctrl+d` to end the editing session.
+Start by coping and pasting the following into your shell and then press `ctrl+d` to end the editing session.
 
 ```
 cat >mongodb.org-3.2.repo
@@ -44,19 +45,19 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 ```
     
-#### Now using the following command you can see the file you just created.
+Now usie the following command you can see the file you just created.
 
 ```
 cat mongodb.org-3.2.repo
 ```
 
-#### Now lets move the file into the proper folder, using the `'mv'` command.
+Now lets move the file into the proper folder, using the `'mv'` command.
 
 ```
 sudo mv mongodb.org-3.2.repo /etc/yum.repos.d
 ```
 
-####  We need to make sure it has the right permissions and ownership, `'ls -la'` allows us to see who owns the file and what permissions it has assigned.
+We need to make sure it has the right permissions and ownership, `'ls -la'` allows us to see who owns the file and what permissions it has assigned.
 
 ```
 ls -la /etc/yum.repos.d
@@ -139,7 +140,7 @@ drwxr-xr-x. 87 root root 8192 Sep 16 16:38 ..
 -rw-r--r--.  1 root root  282 May 17 19:05 OpenLogic.repo    
 ```
 
-#### Install MongoDB
+### Install MongoDB with yum
 
 Start the installation with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
 
@@ -147,7 +148,7 @@ Start the installation with the following command, and press `y` to Confirm the 
 sudo yum install mongodb-org
 ```
 
-#### Start the service:
+### Start the MongoDB service:
 
 ```
 sudo systemctl start mongod
@@ -177,23 +178,23 @@ Oct 13 01:39:07 chentos mongod[48902]: Starting mongod: [  OK  ]
 Oct 13 01:39:07 chentos systemd[1]: Started SYSV: Mongo is a scalable, document-oriented database..
 ```
 
-## Node.js
+## Install Node.js
 
-#### First install the epel-release with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
+First install the epel-release with the following command, and press `y` to Confirm the installation, when it is done is should say `Complete!`
 
 ```
 sudo yum install epel-release
 ```
 
-#### Next, Install [NodeJS](https://nodejs.org), with the following command, and press `y` to Confirm the installation TWICE, when it is done is should say `Complete!`
+Next, Install [NodeJS](https://nodejs.org), with the following command, and press `y` to Confirm the installation TWICE, when it is done is should say `Complete!`
 
 ```
 sudo yum install nodejs
 ```
 
-#### Now Check the installed version of NodeJS and [NPM](https://www.npmjs.com/)
+Now Check the installed version of NodeJS and [NPM](https://www.npmjs.com/)
 
-to check the version of `node` execute the following
+To check the version of `node` execute the following
 
 ```
 node --version
@@ -205,7 +206,7 @@ you should see this
 v6.11.1
 ```
 
-to check teh version of `npm` execute the following
+To check teh version of `npm` execute the following
 
 ```
 npm version
@@ -228,19 +229,21 @@ you should see this:
 
 ## The rest of the packages
 
-#### Bower
+### Install Bower
 We are going to use the [Bower Package Manager](http://bower.io/) to manage our front-end packages. Execute the following to install it.
 
 ```
 sudo npm install -g bower
 ```
 
-#### Git
+### Install Git
 We will be using `'git'` to clone directories. Execute the following to install it. Don't forget to confirm the install.
 
 ```
 sudo yum install git
 ```
+
+### Install MEAN.JS
 
 We clone the latest version of [MEAN.JS](https://github.com/meanjs/mean) boilerplate
 
@@ -264,7 +267,7 @@ npm install
 
 > To update these packages later on, just run npm update
 
-### Start the node server
+## Start the node server
 We can run the app now:
 
 ```
@@ -286,7 +289,7 @@ MEAN.JS version: 0.5.0
 --
 ```
 
-#### View your app
+## View your app
 On your PC, open your browser and navigate to your web servers URL, port 3000. The URL is the FQDN we used earlier, plus the port number. 
 
 Mine looks like this
