@@ -2,8 +2,6 @@
 
 ![Drawing](./img/multi-vm-diagram.png)
 
-Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
-
 ## In this lab we will:
 1. Deploy two Windows VMs and install IIS on each
 1. The VMs will be placed in an [Availability Set](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/manage-availability) to be in scope for the [99.95% VM SLA](https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines)
@@ -12,6 +10,8 @@ Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
 1. VMs will be placed inside a [Virtual Network/Subnet](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) with appropriate [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-nsg) to limit traffic. 
 
 This lab is based on the following article: [Run load-balanced VMs for scalability and availability](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/virtual-machines-windows/multi-vm). NOTE: at the time of writing this lab the ARM template at the bottom of the article is broken.
+
+This lab will take about 45 minutes to complete. 
 
 ## Lab Navigation
 1. [Overview](./) *<-- you are here*
@@ -27,3 +27,5 @@ This lab is based on the following article: [Run load-balanced VMs for scalabili
 1. [CLI commands Summary](./summary.html)
 
 [Back to Index](../../index.html)
+
+Created at Microsoft by [Shawn Weisfeld](https://github.com/shawnweisfeld)
