@@ -7,32 +7,32 @@ The Windows Subsystem for Linux is a collection of components that enables nativ
 
 If you are using Windows and have not done so already, follow the instructions [here](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) to install the Windows Subsystem for Linux. 
 
-### Next you will need to install the Azure CLI v2.0
+### Install the Azure CLI v2.0
 
 If you have not done so already. Follow the 'Install with apt-get for Bash on Ubuntu on Windows' instructions [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest#install-on-windows).
 
-### If you have not done so already, create a pair of SSH keys using Bash.
+### Create a pair of SSH keys using Bash.
 
-#### Use *'ssh-keygen'* to create an RSA SSH key of 4096 bits pointing to our e-mail address.
+Use *'ssh-keygen'* to create an RSA SSH key of 4096 bits pointing to our e-mail address.
 
 ```
 ssh-keygen -t rsa -b 4096 -C "your email address"
 ```
 
-#### After this command you will be asked for a location to save your powerful key, you can give it a custom location but it's not really necessary unless you actually handle multiple keys.
+After this command you will be asked for a location to save your powerful key, you can give it a custom location but it's not really necessary unless you actually handle multiple keys.
 
 ```
 Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 ```
 
-#### Now you will be asked to enter a password to increase the level of security of your key. This password is optional, but if you decide to set it up you will need to enter it every time you interact with your SSH private key:
+Now you will be asked to enter a password to increase the level of security of your key. This password is optional, but if you decide to set it up you will need to enter it every time you interact with your SSH private key:
 
 ```
 Enter passphrase (empty for no passphrase): [Type a passphrase]
 Enter same passphrase again: [Type passphrase again]
 ```
 
-#### Now, after your key was created just *cat* the content of your public key (if you used a different location, make sure you use the correct file). This is the key you will be pasting in your azure cli to create the VM.
+Now, after your key was created just *cat* the content of your public key (if you used a different location, make sure you use the correct file). This is the key you will be pasting in your azure cli to create the VM.
 
 ```
 cat ~/.ssh/id_rsa.pub
@@ -46,9 +46,9 @@ ssh-rsa 123456789/dTc6wJT+YCOUiLLS6F7Ge4WlCgmH7fW7UIUJpFcXwDv1bWVMQ3chBFFELWEhEj
 
 > When you copy the key to your clipboard for use later in the vm creation process, the key should include "ssh-rsa" and the email address provided
 
-### Log in to your Azure Subscription
+### Login to your Azure Subscription
 
-#### Enter the following command
+Enter the following command to login
 
 ```
 az login
