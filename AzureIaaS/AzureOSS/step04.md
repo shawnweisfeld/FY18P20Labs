@@ -213,7 +213,7 @@ npm version
 
 you should see this:
 
-```
+```JSON
 { npm: '3.10.10',
     ares: '1.10.1-DEV',
     http_parser: '2.7.1',
