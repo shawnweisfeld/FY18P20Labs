@@ -24,9 +24,12 @@ The following steps will create the Kubernetes cluster using command line comman
 If you don’t have it installed locally, follow the guide [here](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/) to install Azure CLI v2 on your local machine.
 
 ### Login to your Azure subscription and create a new resource group
+
+For simplicity's sake, we will use the same name for the Resource Group and the DNS Prefix.  To prevent DNS name collisions, make sure to suffix RESOURCE_GROUP with your username
+
 ```
 az login
-RESOURCE_GROUP=my-k8s-cluster
+RESOURCE_GROUP=my-k8s-cluster-<USER>
 az group create --name $RESOURCE_GROUP --location westus
 ```
 
