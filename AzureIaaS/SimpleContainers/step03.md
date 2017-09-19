@@ -6,7 +6,7 @@ Images of containers are immutable.  (i.e. when you start a container, and make 
 ### Start and modify a Ubuntu container 
 Start an Ubuntu Container:
 ```
-docker run –it ubuntu /bin/bash
+docker run -it ubuntu /bin/bash
 ```
 
 Make a change to the container and exit
