@@ -36,6 +36,7 @@ From a Command Prompt:
 
     ```cmd
     CD microsoft-graph-explorer\
+    ```
 
 1. Rename `secrets.sample.js` to `secrets.js`:
 
@@ -63,7 +64,7 @@ From a Command Prompt:
 
 6. Under **Platforms** select the **Add Platform** button.
 
-7. Select **Web* as the Platform type.
+7. Select **Web** as the Platform type.
 
 8. Enter `http://localhost:3000` under **Redirect URLs**.
 
@@ -77,15 +78,69 @@ From a Command Prompt:
 
 ## Build & Run Explorer
 
+1. Return to your Command Prompt 
 
 1. Download requested packaged from `npm`:
 
     ```cmd
     npm install
     ```
+    _This process will take a minute or two. You can ignore any warnings._
+
 
 1. Start Graph Explorer using `npm`:
 
     ```cmd
     npm start
+    ```
+    _At this point a browser will open automatically and open http://localhost:3000_
+
+## Try some Samples
+
+When the Explorer opens it will default to a demo tenant and query of `https://graph.microsoft.com/v1.0/me/`. Click **Run Query** to execute and receive this JSON result:
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+    "id": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+    "businessPhones": [
+        "+1 412 555 0109"
+    ],
+    "displayName": "Megan Bowen",
+    "givenName": "Megan",
+    "jobTitle": "Auditor",
+    "mail": "MeganB@M365x214355.onmicrosoft.com",
+    "mobilePhone": null,
+    "officeLocation": "12/1110",
+    "preferredLanguage": "en-US",
+    "surname": "Bowen",
+    "userPrincipalName": "MeganB@M365x214355.onmicrosoft.com"
+}
+```
+
+### View Profile Photo  
+
+* Try the query `https://graph.microsoft.com/v1.0/me/photo/$value` to download the user's profile photo. 
+
+* See the meta-data for the profile photo with the query `https://graph.microsoft.com/v1.0/me/photo/$value`
+
+
+### Teams & Groups
+
+* See which Groups the user belongs too: 
+
+    ```
+https://graph.microsoft.com/v1.0/me/memberOf
+    ```
+
+* Reduce the properties returned to only `id` and `displayName`: 
+
+    ```
+https://graph.microsoft.com/v1.0/me/memberOf?$select=id,displayName
+    ```
+
+* Return which Teams the user has joined: 
+
+    ```
+https://graph.microsoft.com/beta/me/joinedTeams
     ```
