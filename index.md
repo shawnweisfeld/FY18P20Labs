@@ -1,8 +1,6 @@
 # FY18 P20 Summer Camp Content
 
-<br>
-<br>
-
+![Schedule](./img/schedule.png)
 
 ## Solutioning
 ### Data and AI
@@ -19,8 +17,6 @@
 ### Business Apps
  - [Here](./BusinessApps/solutioning-scenario.pdf)
 
-<br>
-<br>
 <br>
 
 ## Experiential
