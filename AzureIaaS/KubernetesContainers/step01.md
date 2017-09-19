@@ -25,7 +25,7 @@ If you don’t have it installed locally, follow the guide [here](https://azure.
 
 ### Login to your Azure subscription and create a new resource group
 
-For simplicity's sake, we will use the same name for the Resource Group and the DNS Prefix.  To prevent DNS name collisions, make sure to suffix RESOURCE_GROUP with your username
+*NOTE: For simplicity's sake, we will use the same name for the Resource Group and the DNS Prefix.  To prevent DNS name collisions, make sure to suffix RESOURCE_GROUP with your username.  e.g. `RESOURCE_GROUP=my-k8s-cluster-thfalgou` *
 
 ```
 az login
