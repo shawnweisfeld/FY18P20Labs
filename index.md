@@ -6,7 +6,7 @@
 ## Day 1
 ### Modern Workspace
  - Solutioning
-    - [Solutioning and Review](./ModernWorkplace/security/MW-Solutioning-and-Review-v1.7.pptx)
+    - [Solutioning and Review](./ModernWorkplace/MW-Solutioning-and-Review-v1.7.pptx)
     - [Security](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx )
     - [Developer](./ModernWorkplace/dev/WorkingLife-Balance.pptx)
  - Experiential
