@@ -28,7 +28,6 @@ If you don’t have it installed locally, follow the guide [here](https://azure.
 *NOTE: For simplicity's sake, we will use the same name for the Resource Group and the DNS Prefix.  To prevent DNS name collisions, make sure to suffix RESOURCE_GROUP with your username.*  e.g. `RESOURCE_GROUP=my-k8s-cluster-thfalgou`
 
 ```
-az login
 RESOURCE_GROUP=my-k8s-cluster-<USER>
 az group create --name $RESOURCE_GROUP --location westus
 ```
