@@ -5,7 +5,7 @@
 
 ## Day 1
 ### Modern Workspace
- - [General Session PPT](./ModernWorkspace/mw-general-session.pptx)
+ - [General Session PPT](./ModernWorkplace/mw-general-session.pptx)
  - Solutioning
     - [Solutioning and Review](./ModernWorkplace/MW-Solutioning-and-Review-v1.7.pptx)
     - [Security](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx )
