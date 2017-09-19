@@ -11,6 +11,7 @@
  - Experiential
     - [Security](./ModernWorkplace/security/)
     - [Developer](./ModernWorkplace/dev/lab1-graph-explorer.md) 
+    - [Guide](./ModernWorkplace/experiential-guide-v2.docx)
 
 ## Day 2
 ### Azure Apps
