@@ -29,7 +29,7 @@ If you don’t have it installed locally, follow the guide [here](https://azure.
 
 ```
 RESOURCE_GROUP=my-k8s-cluster-<USER>
-az group create --name $RESOURCE_GROUP --location westus
+az group create --name $RESOURCE_GROUP --location southcentralus
 ```
 
 ### Create the Kubernetes cluster
