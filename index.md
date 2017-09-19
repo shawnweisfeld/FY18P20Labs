@@ -1,4 +1,4 @@
-# FY18 P20 Summer Camp Content
+# FY18 P20 Summer Camp
 
 ![Schedule](./img/schedule.png)
 
