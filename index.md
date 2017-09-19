@@ -7,10 +7,10 @@
 ### Modern Workspace
  - Solutioning
     - [Security](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx )
-    - [Developer](./ModernWorkplace/dev/WorkingLife-Balance.pptx )
+    - [Developer](./ModernWorkplace/dev/WorkingLife-Balance.pptx)
  - Experiential
-    - [Security](./ModernWorkplace/security/readme.md )
-    - [Developer](./ModernWorkplace/dev/lab1-graph-explorer.md ) 
+    - [Security](./ModernWorkplace/security/)
+    - [Developer](./ModernWorkplace/dev/lab1-graph-explorer.md) 
 
 ## Day 2
 ### Azure Apps
