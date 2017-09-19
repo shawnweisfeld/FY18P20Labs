@@ -22,7 +22,7 @@ exit
 
 Start the container again
 ```
-docker run –it ubuntu /bin/bash
+docker run -it ubuntu /bin/bash
 ls /tmp/foo
 ```
 
