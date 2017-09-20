@@ -36,6 +36,7 @@
  - [Experiential](https://github.com/chmitch/p20camp-dataandai)
 
 ### Business Apps
+ - [Tribridge](./BusinessApps/Tribridge-P20-Presentation.pptx)
  - [Solutioning](./BusinessApps/solutioning-scenario.pdf)
  - Experiential
      - [Microsoft Dynamics 365 for Customer Service](./BusinessApps/customer-service.pdf)
