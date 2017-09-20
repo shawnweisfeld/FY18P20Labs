@@ -13,8 +13,10 @@ This section focuses on containers’ placement using Kubernetes, which addresse
 Kubernetes uses the concept of Pods as a logical abstract to collect containers in the same collection, which can then be guaranteed to be deployed to the same node. 
 
 #### Kubernetes executes containers in `Pods`. A pod containing a simple Hello World container can be specified in YAML as follows:
+
+https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/KubernetesContainers/hello-world.yaml
+
 ```
-cat hello-world.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -29,7 +31,7 @@ spec:  # specification of the pod's contents
 
 #### This pod can be created using the create command: 
 ```
-kubectl create -f ./hello-world.yaml
+kubectl create -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/hello-world.yaml
 ```
 
 The results should look like this
@@ -59,9 +61,10 @@ pods/hello-world
 ```
 
 #### Let us now start a new pod with two containers. For example, the following configuration file creates two containers: a redis key-value store image, and a nginx frontend image.
-```
-cat pod_sample.yaml
 
+https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/KubernetesContainers/pod-sample.yaml
+
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -78,6 +81,12 @@ spec:
       image: nginx
       ports:
         - containerPort: 8000
+```
+
+Create the the pod:
+
+```
+kubectl create -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/pod-sample.yaml
 ```
 
 ### Placing Pods on Various Kubernetes Nodes:
@@ -97,8 +106,10 @@ kubectl label nodes kubernetes-foo-node-1.c.a disktype=ssd
 ```
 
 #### You can then specify the label in your pod config file as a nodeSelector section
+
+https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/KubernetesContainers/pod-sample-2.yaml
+
 ```
-cat pod2_sample.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -114,8 +125,9 @@ spec:
     disktype: ssd
 ```
 
+Create the pod
 ```
-kubectl create -f ./pod2_sample.yaml
+kubectl create -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/pod-sample-2.yaml
 ```
 
 ```
@@ -138,8 +150,10 @@ You describe a desired state in a Deployment object, and the Deployment controll
 For example, your pods get re-created on a node after disruptive maintenance such as a kernel upgrade. A simple case is to create 1 Replication Set object in order to reliably run one instance of a Pod indefinitely.
 
 #### Create an example of Replication Set and Deployment config. It runs 3 copies of the nginx web server.
+
+https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/KubernetesContainers/nginx-deployment.yaml
+
 ```
-cat nginx-deployment.yaml
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
@@ -162,7 +176,7 @@ spec:
 
 #### Run the new pod
 ```
-kubectl create -f ./nginx-deployment.yaml
+kubectl create -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/nginx-deployment.yaml
 ```
 
 The output should look like this
@@ -225,6 +239,9 @@ To update a service without an outage, `kubectl` supports what is called 'rollin
 This example demonstrates the usage of Kubernetes to perform a rolling update for a new container image on a running group of pods.
 
 #### In the previous deployment, we used nginx:1.7.9.  Now we want to upgrade to 1.8
+
+https://github.com/shawnweisfeld/FY18P20Labs/blob/master/AzureIaaS/KubernetesContainers/deployment-nginx-update.yaml
+
 ```
 cat deployment-nginx-update.yaml
 apiVersion: apps/v1beta1
@@ -247,7 +264,7 @@ spec:
 
 #### To update to container image to ngnix 1.9.1, you can use kubectl rolling-update --image to specify the new image:
 ```
-kubectl apply -f deployment-nginx-update.yaml
+kubectl apply -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/deployment-nginx-update.yaml
 ```
 
 The output should look like this
