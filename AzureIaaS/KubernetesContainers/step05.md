@@ -49,8 +49,7 @@ docker tag service-b:latest $ACR_NAME.azurecr.io/service-b:latest
 
 Using the Contributor Service Principal, log into the ACR. The login command for a remote registry has the form: 
 ```
-docker login -u user -p password server
-docker login -u <ContributorAppId>  -p <my-acr-password> $ACR_NAME.azurecr.io
+docker login -u <ContributorAppId>  -p my-acr-password $ACR_NAME.azurecr.io
 ```
 
 ### Push the images
