@@ -19,6 +19,7 @@
 
 ## Day 2
 ### Azure Apps
+ - [General Session](./AzurePaaS/General-Session.pptx)
  - [Solutioning](https://1drv.ms/w/s!ApNjXNBDMrWt2zNEDRjyKEpH1Lgm)
  - [Experiential](https://1drv.ms/b/s!ApNjXNBDMrWt2zQbDuj6I_6WHZnR)
 
