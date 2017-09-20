@@ -36,7 +36,7 @@ kubectl create -f https://raw.githubusercontent.com/lastcoolnameleft/demos/maste
 
 The results should look like this
 ```
-pods/hello-world
+pod "hello-world" created
 ```
 
 #### You can see the pod you created using the get command:
@@ -57,7 +57,7 @@ kubectl delete pod hello-world
 
 The results should look like this
 ```
-pods/hello-world
+pod "hello-world" deleted
 ```
 
 #### Let us now start a new pod with two containers. For example, the following configuration file creates two containers: a redis key-value store image, and a nginx frontend image.
@@ -181,7 +181,7 @@ kubectl create -f https://raw.githubusercontent.com/lastcoolnameleft/demos/maste
 
 The output should look like this
 ```
-replicationcontrollers/nginx
+deployment "nginx-deployment" created
 ```
 
 #### Check the status of the replica controller
@@ -282,9 +282,6 @@ The output should look like this
 NAME                                              READY     STATUS    RESTARTS   AGE       DEPLOYMENT
 my-nginx-ccba8fbd8cc8160970f63f9a2696fc46-k156z   1/1       Running   0          1m        ccba8fbd8cc8160970f63f9a2696fc46
 my-nginx-ccba8fbd8cc8160970f63f9a2696fc46-v95yh   1/1       Running   0          35s       ccba8fbd8cc8160970f63f9a2696fc46
-my-nginx-divi2                                    1/1       Running   0          2h        2d1d7a8f682934a254002b56404b813e
-my-nginx-o0ef1                                    1/1       Running   0          2h        2d1d7a8f682934a254002b56404b813e
-my-nginx-q6all                                    1/1       Running   0          8m        2d1d7a8f682934a254002b56404b813e
 ```
 
 ```
