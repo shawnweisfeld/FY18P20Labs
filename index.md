@@ -7,6 +7,7 @@
 ### Modern Workspace
  - [General Session PPT](./ModernWorkplace/mw-general-session.pptx)
  - [Cloud Solution Provider - Integration](./ModernWorkplace/CloudSolutionProvider-Integration.pptx)
+ - [PTS Session](https://aka.ms/OCPMWP)
  - Solutioning
     - [Solutioning and Review](./ModernWorkplace/MW-Solutioning-and-Review-v1.7.pptx)
     - [Security](./ModernWorkplace/security/P20ModernWorkplaceSecurity.pptx )
