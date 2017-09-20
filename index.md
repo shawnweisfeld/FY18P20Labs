@@ -23,6 +23,7 @@
  - [Experiential](https://1drv.ms/b/s!ApNjXNBDMrWt2zQbDuj6I_6WHZnR)
 
 ### Azure Infrastructure
+ - [General Session](./AzureIaaS/General-Session.pptx)
  - [Solutioning](./AzureIaaS/solutioning.html)
  - Experiential
     - [Run load-balanced VMs for scalability and availability](./AzureIaaS/SingleRegionHALab/)
