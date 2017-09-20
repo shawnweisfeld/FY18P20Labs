@@ -19,6 +19,8 @@ kubectl proxy
 
 The output will note the port that the proxy binds to. The console will then be available at that port on localhost. e.g. http://localhost:8001/ui
 
+*NOTE: This will only work when running locally, and not if you're using the Azure CLI*
+
 ## Lab Navigation
 1. [Lab Overview](./index.html)
 1. [Kubernetes Installation on Azure](./step01.html)

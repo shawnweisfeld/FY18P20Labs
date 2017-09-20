@@ -21,7 +21,7 @@
 The following steps will create the Kubernetes cluster using command line commands: 
 
 ### Download and install Azure CLI 
-If you don’t have it installed locally, follow the guide [here](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/) to install Azure CLI v2 on your local machine.
+If you don’t have it installed locally, follow the guide [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to install Azure CLI v2 on your local machine.
 
 ### Login to your Azure subscription and create a new resource group
 
@@ -34,7 +34,7 @@ az group create --name $RESOURCE_GROUP --location southcentralus
 
 ### Create the Kubernetes cluster
 ```
-az acs create --name $RESOURCE_GROUP --resource-group $RESOURCE_GROUP --orchestrator-type Kubernetes --dns-prefix $RESOURCE_GROUP
+az acs create --name $RESOURCE_GROUP --resource-group $RESOURCE_GROUP --orchestrator-type Kubernetes --dns-prefix $RESOURCE_GROUP --generate-ssh-keys
 ```
 
 The above command will use ACS to create a new Kubernetes cluster named "my-k8-cluster" within the newly created resource group. The orchestrator-type parameter indicates to ACS that you are creating a kubernetes cluster with a dns parameter and to generate new ssh keys and service principals. 

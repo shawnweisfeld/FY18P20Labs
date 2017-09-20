@@ -30,6 +30,9 @@ az ad sp create-for-rbac --name my-acr-contributor  --role Contributor --passwor
 ```
 
 ### Push demo app images to ACR
+
+*NOTE: This needs to be done on the same machine you built your docker images*
+
 List the local docker images. You should see the images built in the initial steps when deploying the application locally.
 
 ```
@@ -46,8 +49,7 @@ docker tag service-b:latest $ACR_NAME.azurecr.io/service-b:latest
 
 Using the Contributor Service Principal, log into the ACR. The login command for a remote registry has the form: 
 ```
-docker login -u user -p password server
-docker login -u <ContributorAppId>  -p <my-acr-password> $ACR_NAME.azurecr.io
+docker login -u <ContributorAppId>  -p my-acr-password $ACR_NAME.azurecr.io
 ```
 
 ### Push the images
@@ -65,6 +67,9 @@ kubectl create secret docker-registry acr-reader --docker-server=$ACR_NAME.azure
 
 ### Create k8s-demo-app.yml 
 Make the changes to point to your ACR instance
+
+https://github.com/lastcoolnameleft/demos/blob/master/k8s-lab/k8s-demo-app.yaml
+
 ```
 apiVersion: v1
 kind: Service
@@ -119,6 +124,7 @@ spec:
         - name: acr-reader
 ```
 
+
 ### Deploy the application to the k8 cluster
 
 Review the contents of the k8-demo-app.yml file. It contains the objects to be created on the k8 cluster.
@@ -143,10 +149,31 @@ Update the image references in the k8-demo-app.yml file to reference your ACR en
 
 Deploy the application using the kubectl create command:
 ```
-kubectl create -f k8-demo-app.yml
+wget https://raw.githubusercontent.com/lastcoolnameleft/demos/master/k8s-lab/k8s-demo-app.yaml
+sed "s/myacr.azurecr.io/$ACR_NAME.azurecr.io/g" < k8s-demo-app.yaml > k8s-demo-app-update.yaml
+kubectl create -f ./k8s-demo-app-update.yaml
 ```
 
+If you run `kubectl get pods,svc,deploy`, you should see something like:
+```
+NAME                                      READY     STATUS              RESTARTS   AGE
+po/multi-container-demo-604940585-1c7wn   0/3       ContainerCreating   0          59s
+po/nginx-2371676037-6b718                 1/1       Running             0          39m
+po/nginx-deployment-3285060500-1rrrd      1/1       Running             0          40m
+po/nginx-deployment-3285060500-rsm70      1/1       Running             0          40m
+po/nginx2                                 1/1       Running             0          42m
+po/redis-nginx                            2/2       Running             0          43m
 
+NAME                       CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
+svc/kubernetes             10.0.0.1      <none>          443/TCP        58m
+svc/multi-container-demo   10.0.43.186   <pending>       80:31495/TCP   1m
+svc/nginx                  10.0.245.66   13.65.214.240   80:30577/TCP   39m
+
+NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+deploy/multi-container-demo   1         1         1            0           59s
+deploy/nginx                  1         1         1            1           39m
+deploy/nginx-deployment       2         2         2            2           42m
+```
 
 ## Lab Navigation
 1. [Lab Overview](./index.html)
