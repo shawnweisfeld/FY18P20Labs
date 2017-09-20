@@ -26,7 +26,7 @@ You will be prompted to provide the following: (NOTE: everything should be lower
 1. Your admin user name (i.e. `shawn`), not `admin`
 1. A DNS Custom Name (two random characters)
 1. Your SSH key, we created this earlier. Remember it should start with `ssh-rsa` and end with your email address
-1. The name of the VM, use `myosslabvm`
+1. The name of the VM, I used `myosslabvm`, but you should pick something unique
 
 After a few minutes you should see some JSON in the shell, these are the details about the VM you just provisioned.
     
