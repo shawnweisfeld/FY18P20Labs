@@ -41,13 +41,13 @@ pod "hello-world" created
 
 #### You can see the pod you created using the get command:
 ```
-kubectl get pods
+kubectl get pods --show-all
 ```
 
 The results should look like this
 ```
-NAME          READY     STATUS    RESTARTS   AGE
-hello-world   1/1       Running   0          5s
+NAME          READY     STATUS      RESTARTS   AGE
+hello-world   0/1       Completed   0          1m
 ```
 
 #### Terminated pods aren’t currently automatically deleted, so you will need to delete them manually using:
