@@ -21,7 +21,7 @@
 The following steps will create the Kubernetes cluster using command line commands: 
 
 ### Download and install Azure CLI 
-If you don’t have it installed locally, follow the guide [here](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/) to install Azure CLI v2 on your local machine.
+If you don’t have it installed locally, follow the guide [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) to install Azure CLI v2 on your local machine.
 
 ### Login to your Azure subscription and create a new resource group
 
