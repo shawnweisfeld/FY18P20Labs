@@ -30,6 +30,9 @@ az ad sp create-for-rbac --name my-acr-contributor  --role Contributor --passwor
 ```
 
 ### Push demo app images to ACR
+
+*NOTE: This needs to be done on the same machine you built your docker images*
+
 List the local docker images. You should see the images built in the initial steps when deploying the application locally.
 
 ```
