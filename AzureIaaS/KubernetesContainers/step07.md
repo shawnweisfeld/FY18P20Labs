@@ -44,7 +44,6 @@ kubectl config get-contexts
 kubectl config set-context test --cluster=$RESOURCE_GROUP --user=$USER --namespace=test 
 kubectl config use-context test
 kubectl config get-contexts
-kubectl create -f k8-demo-app.yml
 ```
 
 ## Lab Navigation
