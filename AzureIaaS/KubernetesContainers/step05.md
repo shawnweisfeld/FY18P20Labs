@@ -143,7 +143,7 @@ Update the image references in the k8-demo-app.yml file to reference your ACR en
 
 Deploy the application using the kubectl create command:
 ```
-kubectl create -f k8-demo-app.yml
+kubectl create -f https://raw.githubusercontent.com/shawnweisfeld/FY18P20Labs/master/AzureIaaS/KubernetesContainers/k8s-demo-app.yml
 ```
 
 
