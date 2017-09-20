@@ -149,7 +149,9 @@ Update the image references in the k8-demo-app.yml file to reference your ACR en
 
 Deploy the application using the kubectl create command:
 ```
-kubectl create -f https://raw.githubusercontent.com/lastcoolnameleft/demos/master/k8s-lab/k8s-demo-app.yaml
+wget https://raw.githubusercontent.com/lastcoolnameleft/demos/master/k8s-lab/k8s-demo-app.yaml
+sed "s/myacr.azurecr.io/$ACR_NAME.azureacr.io/g" < k8s-demo-app.yaml > k8s-demo-app-update.yaml
+kubectl create -f ./k8s-demo-app-update.yaml
 ```
 
 
