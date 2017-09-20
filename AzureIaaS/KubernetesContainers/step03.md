@@ -186,7 +186,7 @@ deployment "nginx-deployment" created
 
 #### Check the status of the replica controller
 ```
-$>  kubectl describe deployment nginx-deployment
+kubectl describe deployment nginx-deployment
 ```
 
 The output should look like this
