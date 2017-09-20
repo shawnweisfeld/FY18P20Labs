@@ -154,7 +154,26 @@ sed "s/myacr.azurecr.io/$ACR_NAME.azurecr.io/g" < k8s-demo-app.yaml > k8s-demo-a
 kubectl create -f ./k8s-demo-app-update.yaml
 ```
 
+If you run `kubectl get pods,svc,deploy`, you should see something like:
+```
+NAME                                      READY     STATUS              RESTARTS   AGE
+po/multi-container-demo-604940585-1c7wn   0/3       ContainerCreating   0          59s
+po/nginx-2371676037-6b718                 1/1       Running             0          39m
+po/nginx-deployment-3285060500-1rrrd      1/1       Running             0          40m
+po/nginx-deployment-3285060500-rsm70      1/1       Running             0          40m
+po/nginx2                                 1/1       Running             0          42m
+po/redis-nginx                            2/2       Running             0          43m
 
+NAME                       CLUSTER-IP    EXTERNAL-IP     PORT(S)        AGE
+svc/kubernetes             10.0.0.1      <none>          443/TCP        58m
+svc/multi-container-demo   10.0.43.186   <pending>       80:31495/TCP   1m
+svc/nginx                  10.0.245.66   13.65.214.240   80:30577/TCP   39m
+
+NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+deploy/multi-container-demo   1         1         1            0           59s
+deploy/nginx                  1         1         1            1           39m
+deploy/nginx-deployment       2         2         2            2           42m
+```
 
 ## Lab Navigation
 1. [Lab Overview](./index.html)
