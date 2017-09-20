@@ -1,7 +1,7 @@
 # Open Source Workloads in Azure with Linux
 ## Connect to a Linux VM in Azure
 
-First we need to know the FQDN for our VM, we can get that with the following command
+First we need to know the FQDN for our VM, we can get that with the following command (NOTE: replace the name of the vm with the one you choose in the last step)
 
 ```
 az vm show -g $RG -n myosslabvm -d --query "fqdns"
