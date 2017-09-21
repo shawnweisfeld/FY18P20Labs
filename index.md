@@ -43,7 +43,7 @@
 
 ### Business Apps
  - [PTS Session](http://aka.ms/ocpbusinessapps)
- - [Tribridge](./BusinessApps/Tribridge-P20-Presentation.pptx)
+ - [General Session](./BusinessApps/Tribridge-P20-Presentation.pptx)
  - [Solutioning](./BusinessApps/solutioning-scenario.pdf)
  - Experiential
      - [Microsoft Dynamics 365 for Customer Service](./BusinessApps/customer-service.pdf)
