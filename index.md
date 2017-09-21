@@ -19,6 +19,8 @@
     - [Applying Microsoft Teams in the Real World](./ModernWorkplace/experiential-guide-v2.docx)
 
 ## Day 2
+ - [PTS Session](./AzureIaaS/P20_Tech_Strategy_Wednesday_Apps_Infrastructure.pptm)
+
 ### Azure Apps
  - [General Session](./AzurePaaS/General-Session.pptx)
  - [Solutioning](https://1drv.ms/w/s!ApNjXNBDMrWt2zNEDRjyKEpH1Lgm)
