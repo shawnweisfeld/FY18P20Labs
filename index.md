@@ -2,6 +2,7 @@
 
 ![Schedule](./img/schedule.png)
 
+[Kickoff Deck](./img/P20-KickOff.pptx)
 
 ## Day 1
 ### Modern Workspace
