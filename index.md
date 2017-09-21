@@ -5,6 +5,8 @@
 [Kickoff Deck](./img/P20-KickOff.pptx)
 
 ## Day 1
+ - Lunch Session (Coming Soon)
+
 ### Modern Workspace
  - [General Session PPT](./ModernWorkplace/mw-general-session.pptx)
  - [Cloud Solution Provider - Integration](./ModernWorkplace/CloudSolutionProvider-Integration.pptx)
@@ -19,6 +21,7 @@
     - [Applying Microsoft Teams in the Real World](./ModernWorkplace/experiential-guide-v2.docx)
 
 ## Day 2
+ - Lunch Session (Coming Soon)
  - [PTS Session](./AzureIaaS/P20_Tech_Strategy_Wednesday_Apps_Infrastructure.pptm)
 
 ### Azure Apps
@@ -36,7 +39,10 @@
     - [Containers Orchestrator hands-on lab with Kubernetes](./AzureIaaS/KubernetesContainers/)
 
 ## Day 3
+ - Lunch Session (Coming Soon)
+
 ### Data and AI
+ - PTS Session (Coming Soon)
  - [General Session](./DataAi/P20DataAI_keynote_updated.pptx)
  - [Solutioning](./DataAi/)
  - [Experiential](https://github.com/chmitch/p20camp-dataandai)
