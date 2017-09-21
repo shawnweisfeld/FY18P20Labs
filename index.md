@@ -37,6 +37,7 @@
 
 ## Day 3
 ### Data and AI
+ - [General Session](./DataAi/P20DataAI_keynote_updated.pptx)
  - [Solutioning](./DataAi/)
  - [Experiential](https://github.com/chmitch/p20camp-dataandai)
 
