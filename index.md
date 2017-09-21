@@ -42,6 +42,7 @@
  - [Experiential](https://github.com/chmitch/p20camp-dataandai)
 
 ### Business Apps
+ - [PTS Session](http://aka.ms/ocpbusinessapps)
  - [Tribridge](./BusinessApps/Tribridge-P20-Presentation.pptx)
  - [Solutioning](./BusinessApps/solutioning-scenario.pdf)
  - Experiential
