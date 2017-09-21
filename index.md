@@ -2,9 +2,8 @@
 
 ![Schedule](./img/schedule.png)
 
-[Kickoff Deck](./img/P20-KickOff.pptx)
-
 ## Day 1
+ - [Kickoff Deck](./img/P20-KickOff.pptx)
  - Lunch Session (Coming Soon)
 
 ### Modern Workspace
