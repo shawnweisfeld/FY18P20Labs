@@ -4,11 +4,10 @@
 
 ## Day 1
  - [Kickoff Deck](./img/P20-KickOff.pptx)
- - Lunch Session (Coming Soon)
+ - [Lunch Session - Cloud Solution Provider - Integration](./ModernWorkplace/CloudSolutionProvider-Integration.pptx)
 
 ### Modern Workspace
  - [General Session PPT](./ModernWorkplace/mw-general-session.pptx)
- - [Cloud Solution Provider - Integration](./ModernWorkplace/CloudSolutionProvider-Integration.pptx)
  - [PTS Session](https://aka.ms/OCPMWP)
  - Solutioning
     - [Solutioning and Review](./ModernWorkplace/MW-Solutioning-and-Review-v1.7.pptx)
