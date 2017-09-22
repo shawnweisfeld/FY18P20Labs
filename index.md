@@ -40,7 +40,7 @@
  - Lunch Session (Coming Soon)
 
 ### Data and AI
- - PTS Session (Coming Soon)
+ - [PTS Session](./DataAi/Data-Bus-Apps-PTS-Track-Final.pptx)
  - [General Session](./DataAi/P20DataAI_keynote_updated.pptx)
  - [Solutioning](./DataAi/)
  - [Experiential](https://github.com/chmitch/p20camp-dataandai)
