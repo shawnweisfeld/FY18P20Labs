@@ -37,7 +37,7 @@
     - [Containers Orchestrator hands-on lab with Kubernetes](./AzureIaaS/KubernetesContainers/)
 
 ## Day 3
- - [Lunch Session] (/BusinessApps/GDPR-Coming-soon2.pptx)
+ - [Lunch Session](/BusinessApps/GDPR-Coming-soon2.pptx)
 
 ### Data and AI
  - [PTS Session](./DataAi/Data-Bus-Apps-PTS-Track-Final.pptx)
